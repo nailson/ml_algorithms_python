@@ -10,7 +10,6 @@ class NaiveBayesMultinomial():
         self.results = []
 
     def fit(self, X, y):
-
         # For each Class in y
         for c in y.unique():
             # Calculate the pior and store in the prior_dict dictionary
@@ -34,6 +33,7 @@ class NaiveBayesMultinomial():
                             (feature_c, c):
                                 np.count_nonzero(feature_series == feature_c) / len(feature_series)
                         })
+
         return None
 
     def calculate_posterior(self, X):
@@ -51,7 +51,6 @@ class NaiveBayesMultinomial():
         return posterior_dict
 
     def predict(self, X):
-
         # For row in dataset
         self.results = [self.calculate_posterior(row) for index, row in X.iterrows()]
 
