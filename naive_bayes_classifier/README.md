@@ -64,11 +64,13 @@ Calculate the Likelihood
 * Quick to train and update (linear)
 * Probabilities as output
 * Light to Run (CPU and Ram)
+* Can be used for both binary and multi-class classification problems
 
 ## Weaknesses
 
-* Strong Independence Assumption between features
+* Strong Independence Assumption between features (In real life it's very difficult that the features are independent with each other)
 * Performance is very sensitive to skewed data
+* If a categorical variable has a category in the test dataset, which was not observed in training dataset, then the model will assign a 0 (zero) probability and will be unable to make a prediction.
 
 ## References
 
