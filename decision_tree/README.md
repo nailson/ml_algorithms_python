@@ -53,18 +53,18 @@ It constructs **binary trees** using the features and thresholds that yields the
 
 Impurity Measures are used to find the equality or randomness of the dataset when it is split into the nodes.
 
-* Gini
+#### Gini
 Easier to understand, it's the “measure how often a randomly chosen element from the set would be incorrectly labeled”
 
 ![Gini impurity](images/gini.png)
 
-* Entropy
+#### Entropy
 It's used in ID3, C4.5 and similar.
 Calculated the homogeneus of
 
 ![Entropy impurity](images/entropy.jpeg)
 
-* Misclassification Error
+#### Misclassification Error
 
 ![Comparing Impurity Meausres](images/entropy_curve.png)
 

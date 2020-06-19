@@ -1,7 +1,7 @@
 # Fundamental Machine Learning Algorithms with Python
 
-The purpose of this repository is to develop from scrach the fundamental ML algorithms and revise the concepts.
-**It's very important to mention that this idea caught me in global quarentine times.
+The purpose of this repository is to develop from scratch the fundamental ML algorithms and revise the concepts.
+**It's very important to mention that this idea caught me in global quarantine times.
 
 ## Naive Bayes
 DONE
