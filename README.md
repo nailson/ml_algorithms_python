@@ -4,10 +4,10 @@ The purpose of this repository is to develop from scrach the fundamental ML algo
 **It's very important to mention that this idea caught me in global quarentine times.
 
 ## Naive Bayes
-IN-PROGRESS
+DONE
 
 ## Decision Tree
-TODO
+IN-PROGRESS
 
 ## KNN
 TODO
