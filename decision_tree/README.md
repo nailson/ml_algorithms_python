@@ -3,6 +3,8 @@ Decision tree builds classification or regression models in the form of a tree s
 
 The first glance of implementing this was... there are a lot of different approaches, how to start?
 
+![Decision Tree](images/decision_tree_example.jpg)
+
 ## Decision Tree Types
 
 A Tree construction is a NP-Hard problem (generally solved by a greedy algorithm, this could result in a local optimal solution). This are the three mos known solutions for Decision Trees:
