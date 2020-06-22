@@ -62,12 +62,11 @@ Easier to understand, it's the “measure how often a randomly chosen element fr
 It's used in ID3, C4.5 and similar.
 Calculated the homogeneus of
 
-![Entropy impurity](images/entropy.jpeg)
+![Entropy impurity](images/entropy.png)
 
 #### Misclassification Error
 
 ![Comparing Impurity Meausres](images/entropy_curve.png)
-
 
 ### Advantages of CART
 
@@ -88,3 +87,5 @@ Calculated the homogeneus of
 ## References
 
 [Tree algorithms: ID3, C4.5, C5.0 and CART](https://medium.com/datadriveninvestor/tree-algorithms-id3-c4-5-c5-0-and-cart-413387342164)
+
+[Decision Trees from Scratch Using ID3 Python: Coding It Up !!](https://medium.com/@pytholabs/decision-trees-from-scratch-using-id3-python-coding-it-up-6b79e3458de4)
