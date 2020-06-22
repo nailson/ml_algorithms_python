@@ -7,9 +7,6 @@ class ID3():
     def __init__(self):
         self.tree = []
 
-    def fit(self, X, y):
-        self.tree = self.buildTree(X, y, tree=None)
-
     def count_classes(self, label_serie):
         return label_serie.value_counts().to_dict()
 
@@ -74,3 +71,6 @@ class ID3():
                 tree[node][class_name] = self.buildTree(X_subtable, y_subtable)
 
         return tree
+
+    def fit(self, X, y):
+        self.tree = self.buildTree(X, y, tree=None)
