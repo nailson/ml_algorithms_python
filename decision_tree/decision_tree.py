@@ -72,5 +72,27 @@ class ID3():
 
         return tree
 
+    def tree_inference(self, inst, tree):
+        # This function is used to predict for any input variable
+        for nodes in tree.keys():
+
+            value = inst[nodes]
+            tree = tree[nodes][value]
+            prediction = 0
+
+            if type(tree) is dict:
+                prediction = self.tree_inference(inst, tree)
+            else:
+                prediction = tree
+                break
+
+        return prediction
+
     def fit(self, X, y):
         self.tree = self.buildTree(X, y, tree=None)
+
+    def predict(self, X):
+        predictions = []
+        for _, row in X.iterrows():
+            predictions.append(self.tree_inference(row, self.tree))
+        return predictions
