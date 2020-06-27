@@ -47,7 +47,7 @@ class ID3():
         y1 = y[np.where(X[node] == class_name)[0]].reset_index(drop=True)
         return X1, y1
 
-    def buildTree(self, X, y, tree=None):
+    def build_tree(self, X, y, tree=None):
         # Get attribute with maximum information gain
         node = self.max_gain(X, y)
 
@@ -66,9 +66,9 @@ class ID3():
             # Checking if is a leaf node
             if len(counts) == 1:
                 tree[node][class_name] = clValue[0]
-            # Add a new node and call buildTree function recursively
+            # Add a new node and call build_tree function recursively
             else:
-                tree[node][class_name] = self.buildTree(X_subtable, y_subtable)
+                tree[node][class_name] = self.build_tree(X_subtable, y_subtable)
 
         return tree
 
@@ -89,7 +89,7 @@ class ID3():
         return prediction
 
     def fit(self, X, y):
-        self.tree = self.buildTree(X, y, tree=None)
+        self.tree = self.build_tree(X, y, tree=None)
 
     def predict(self, X):
         predictions = []
