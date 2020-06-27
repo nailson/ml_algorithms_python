@@ -4,10 +4,14 @@ The purpose of this repository is to develop from scratch the fundamental ML alg
 **It's very important to mention that this idea caught me in global quarantine times.
 
 ## Naive Bayes
-DONE
+
+* [Naive Bayes Multinomial/Bernoulli](https://github.com/nailson/ml_algorithms_python/blob/master/naive_bayes_classifier/NaiveBayesClassifier.py): Use only categorical features (both binomial or multinomial distributions) to do the classification.
+
+* [Naive Bayes Gaussian](https://github.com/nailson/ml_algorithms_python/blob/master/naive_bayes_classifier/NaiveBayesClassifier.py): Use only numerical features (with the assumption of normallity of the data) to do the classification.
 
 ## Decision Tree
-IN-PROGRESS
+
+* [ID3](https://github.com/nailson/ml_algorithms_python/blob/master/decision_tree/decision_tree.py) (Iterative Dichotomiser 3): was developed in 1986 by Ross Quinlan. The algorithm creates a multiway tree, finding for each node (i.e. in a greedy manner) the categorical feature that will yield the largest information gain for categorical targets. Trees are grown to their maximum size and then a pruning step is usually applied to improve the ability of the tree to generalise to unseen data.
 
 ## KNN
 TODO
