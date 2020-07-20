@@ -38,7 +38,6 @@ class KNN():
                                             key=lambda lp: euclidian_distance(lp.vector, row.to_numpy()))
             k_nearest = [lp.label for lp in labeled_points_ordered[:k]]
             majority_class = count_majority(k_nearest)
-
             predictions.append(majority_class)
 
         return predictions
