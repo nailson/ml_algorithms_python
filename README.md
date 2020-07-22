@@ -14,7 +14,7 @@ The purpose of this repository is to develop from scratch the fundamental ML alg
 * [ID3](https://github.com/nailson/ml_algorithms_python/blob/master/decision_tree/decision_tree.py) (Iterative Dichotomiser 3): was developed in 1986 by Ross Quinlan. The algorithm creates a multiway tree, finding for each node (i.e. in a greedy manner) the categorical feature that will yield the largest information gain for categorical targets. Trees are grown to their maximum size and then a pruning step is usually applied to improve the ability of the tree to generalise to unseen data.
 
 ## KNN
-TODO
+* [Euclidean Distance K Nearest Neighbours ](https://github.com/nailson/ml_algorithms_python/blob/master/knn/knn.py): is a non-parametric method proposed by Thomas Cover used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space.
 
 ## Linear Regression
 TODO
