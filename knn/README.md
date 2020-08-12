@@ -13,12 +13,14 @@ This algorithm works as follows:
 3. Find a heuristically optimal number k of nearest neighbors, based on RMSE. This is done using cross validation.
 4. Calculate the majority vote or calculate an inverse distance weighted average with the k-nearest multivariate neighbors.
 
-### Advantages
+## Advantages
+
 * Non-parametric
 * Simple and easy to understand
 * Don't need time to train (instance based learning or lazy learning)
 
-### Disavantages
+## Disavantages
+
 * Don't scale with large datasets
 * Doesn't work with high dimentions
 * Sensitive to noise data
