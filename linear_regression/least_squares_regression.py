@@ -12,7 +12,6 @@ class LeastSquaresRegression():
 
             # add x0 = 1 (intercept) to each instance
             X_b = np.c_[np.ones((100, 1)), X.values]
-
             # Apply the normal formula using matrix transformations
             theta_best = np.linalg.inv(X_b.T.dot(X_b)).dot(X_b.T).dot(y.values)
 
@@ -23,7 +22,7 @@ class LeastSquaresRegression():
         return None
 
     def predict(self, X):
-
+        # add x0 = 1 (intercept) to each instance
         X_b = np.c_[np.ones((100, 1)), X.values]
         y_pred = X_b.dot(self.coef)
 

@@ -27,7 +27,7 @@ Using the e in i position represents the ith residual. The RSS is:
 
 ### Using Derivatives
 
-Using derivatives to minimize the RSS 
+Using derivatives to minimize the RSS
 
 <img src="images/contour_simple_rss.png" width="550"/>
 
@@ -58,6 +58,26 @@ The error term or residuals assume to be:
 * Independent
 
 ## Multiple Linear Regression
+Simple linear regression is a useful approach for predicting a response on the basis of a single predictor variable. However, in practice we often have more than one predictor.
+
+<img src="images/multiple_image.png" width="320"/>
+
+The multiple regression coefficient estimates have somewhat complicated forms that are most easily represented using matrix algebra. 
+
+Again we're trying to minimize the RSS:
+
+<img src="images/rss_multiple.png" width="220"/>
+<br/>
+
+Applying the parcial derivatives:
+
+<img src="images/multiple_differenciating.png" width="220"/>
+<br/>
+
+The array with all the Coeficients is given by:
+
+<img src="images/multiple_beta.png" width="170"/>
+
 
 
 ## Gradient Descendent
