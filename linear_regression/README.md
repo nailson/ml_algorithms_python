@@ -83,6 +83,14 @@ The Normal Equation may not work if the matrix X^T * X is not invertible (i.e., 
 
 ## Gradient Descendent
 
+The general idea of Gradient Descent is to tweak parameters iteratively in order to minimize a cost function.
+
+The MSE cost function for a Linear Regression model happens to be a convex function, which means that if you pick any two points on the curve, the line segment joining them never crosses the curve. This implies that there are no local minima, just one global minimum.
+
+When using Gradient Descent, you should ensure that all features have a similar scale, otherwise it will take a long time to converge.
+
+
+
 ## References
 
 [Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. ](https://doi.org/10.1007/b94608_4)
