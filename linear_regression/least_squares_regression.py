@@ -6,8 +6,8 @@ class LeastSquaresRegression():
     def __init__(self):
         self.coef = None
 
-    def fit(self, X, y, gradient_descendent=False):
-        def gradient_descendent_fit(X, y, n_iterations=1000, learning_rate=0.1):
+    def fit(self, X, y, gradient_descent=False):
+        def gradient_descent_fit(X, y, n_iterations=1000, learning_rate=0.1):
             theta = np.random.randn(2, 1)  # random initialization
             X_b = np.c_[np.ones((100, 1)), X.values]   # add x0 = 1 (intercept) to each instance
 
@@ -23,7 +23,7 @@ class LeastSquaresRegression():
 
             return theta_best
 
-        self.coef = gradient_descendent_fit(X, y) if (gradient_descendent) else least_squares_fit(X, y)
+        self.coef = gradient_descent_fit(X, y) if (gradient_descent) else least_squares_fit(X, y)
 
         return None
 
