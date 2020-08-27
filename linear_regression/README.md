@@ -89,7 +89,17 @@ The MSE cost function for a Linear Regression model happens to be a convex funct
 
 When using Gradient Descent, you should ensure that all features have a similar scale, otherwise it will take a long time to converge.
 
+## Bias and Variance
 
+## Regularization
+
+Regularization is a method to automaticly penalizing extra features.
+
+### Lasso
+
+### Ridge
+
+### ElasticNet
 
 ## References
 
