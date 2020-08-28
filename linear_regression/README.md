@@ -182,3 +182,5 @@ New Cost Function:
 [Boehmke, B., & Greenwell, B. (2019). Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow. In Hands-On Machine Learning with R.](https://doi.org/10.1201/9780367816377)
 
 [Regression & Correlation for Military Promotion: A Tutorial](https://www.kdnuggets.com/2016/04/regression-correlation-military-tutorial.html/2)
+
+[What’s the difference between Linear Regression, Lasso, Ridge, and ElasticNet in sklearn?](https://towardsdatascience.com/whats-the-difference-between-linear-regression-lasso-ridge-and-elasticnet-8f997c60cf29)
