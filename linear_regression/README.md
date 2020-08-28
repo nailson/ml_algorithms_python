@@ -13,15 +13,13 @@ Creating a simple one dimentional function of a linear relation between X and y:
 </br>
 <img src="images/regressionresidual.gif" width="250"/>
 
-
 ### Minimize the residual sum of Squares
 
 The residual sum of squares (RSS) is:
 
-<img src="images/rss.png" width="220"/>
-</br>
-Using the e in i position represents the ith residual. The RSS is:
+<img src="images/rss.png" width="220"/></br>
 
+Using the e in i position represents the ith residual. The RSS is:
 
 <img src="images/RSS2.png" width="550"/>
 
