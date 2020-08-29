@@ -124,12 +124,11 @@ Increasing a model’s complexity will typically increase its variance and reduc
 
 ## Regularization
 
-Regularization is a method to automatically penalizing extra features and avoid overfitting.
+Regularization is a method to automatically penalizing extra features and avoid **overfitting**.
 Both can be used with simple derivatives or gradient descendent.
 
-<img src="images/overfitting_meme.png" width="320"/>
+<img src="images/overfitting_meme.png" width="400" />
 <br/>
-
 
 ### Ridge
 
@@ -157,13 +156,17 @@ New Cost Function:
 <img src="images/lasso-regression.png" width="200"/>
 <br/>
 
+Using a little bit of algebra, we come up with:
+
+<img src="images/lasso_math.png" width="200"/>
+<br/>
+
 Description:
 
 * Adds a penalty to the cost function that is the sum of all modules of coeficients;
 * It's also called L1 Regularization;
 * The Coeficients can be set to zero, so  Lasso can work as a feature selection approach.
 * when alpha is zero, the cost function is the same as the regular linear regression.
-
 
 ### ElasticNet
 

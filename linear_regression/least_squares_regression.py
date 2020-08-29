@@ -6,7 +6,7 @@ class LeastSquaresRegression():
     def __init__(self):
         self.coef = None
 
-    def fit(self, X, y, gradient_descent=False):
+    def fit(self, X, y, gradient_descent=False, regularization=''):
         def gradient_descent_fit(X, y, n_iterations=1000, learning_rate=0.1):
             theta = np.random.randn(2, 1)  # random initialization
             X_b = np.c_[np.ones((100, 1)), X.values]   # add x0 = 1 (intercept) to each instance
@@ -17,13 +17,27 @@ class LeastSquaresRegression():
 
             return theta
 
-        def least_squares_fit(X, y):
+        def ridge_fit(X, y, alpha=0.1):
             X_b = np.c_[np.ones((100, 1)), X.values]  # add x0 = 1 (intercept) to each instance
-            theta_best = np.linalg.inv(X_b.T.dot(X_b)).dot(X_b.T).dot(y.values)  # Apply the normal formula
+            I_ = np.identity(X_b.shape[1])  # identity matrix
+            theta_best = np.linalg.inv(X_b.T @ X_b + alpha*I_) @ X_b.T @ y  # Apply the normal formula
 
             return theta_best
 
-        self.coef = gradient_descent_fit(X, y) if (gradient_descent) else least_squares_fit(X, y)
+        def lasso_fit(X, y, alpha=0.1):
+            X_b = np.c_[np.ones((100, 1)), X.values]  # add x0 = 1 (intercept) to each instance
+            theta_best = np.linalg.inv(X_b.T @ X_b) @ (X_b.T @ y - alpha)
+
+            return theta_best
+
+        if gradient_descent:
+            return gradient_descent_fit(X, y)
+        elif regularization == '':
+            return ridge_fit(X, y, alpha=0)
+        elif regularization == 'l2':
+            return ridge_fit(X, y)
+        elif regularization == 'l1':
+            return lasso_fit(X, y)
 
         return None
 

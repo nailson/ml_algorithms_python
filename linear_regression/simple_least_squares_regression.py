@@ -19,7 +19,7 @@ class LeastSquaresRegression():
             numerator = np.sum([x_dev*y_dev for x_dev, y_dev in zip(deviation(X), deviation(y))])
             denominator = np.sum(squared_deviation(X))
             slope = numerator/denominator
-            
+
             intercept = np.mean(y) - slope * np.mean(X)
 
             return intercept, slope
