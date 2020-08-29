@@ -83,8 +83,7 @@ The Normal Equation may not work if the matrix X^T * X is not invertible (i.e., 
 
 The general idea of Gradient Descent is to tweak parameters iteratively in order to minimize a cost function.
 
-<img src="images/gradient_descent_simple.png
-" width="320"/>
+<img src="images/gradient_descent_simple.png" width="370"/>
 <br/>
 
 The MSE cost function for a Linear Regression model happens to be a convex function, which means that if you pick any two points on the curve, the line segment joining them never crosses the curve. This implies that there are no local minima, just one global minimum.
@@ -113,10 +112,11 @@ When using Gradient Descent, you should ensure that all features have a similar 
 
 The model generalization can be expressed as the sum of three different errors:
 
-* Bias: Is how well the model is fitted to the training dataset. High bias is mostly a underfitting problem.
-* Variance: It's related to how sensible the model is to new data (test or validation). High Variance is probably an overfitting issue.
-* Irreducible Error: It's related to the intrinsic noisiness of the data. It can be reduced by data cleaning techniques.
+* **Bias**: Is how well the model is fitted to the training dataset. High bias is mostly a underfitting problem.
+* **Variance**: It's related to how sensible the model is to new data (test or validation). High Variance is probably an overfitting issue.
+* **Irreducible Error**: It's related to the intrinsic noisiness of the data. It can be reduced by data cleaning techniques.
 
+<br/>
 <img src="images/bias_variance.png" width="420"/>
 <br/>
 
@@ -127,21 +127,9 @@ Increasing a model’s complexity will typically increase its variance and reduc
 Regularization is a method to automatically penalizing extra features and avoid overfitting.
 Both can be used with simple derivatives or gradient descendent.
 
-<img src="images/overfitting_meme.png
-" width="320"/>
+<img src="images/overfitting_meme.png" width="320"/>
 <br/>
 
-### Lasso
-
-New Cost Function:
-
-<img src="images/lasso-regression.png" width="200"/>
-<br/>
-
-* Adds a penalty to the cost function that is the sum of all modules of coeficients;
-* It's also called L1 Regularization;
-* The Coeficients can be set to zero, so  Lasso can work as a feature selection approach.
-* when alpha is zero, the cost function is the same as the regular linear regression.
 
 ### Ridge
 
@@ -150,10 +138,32 @@ New Cost Function:
 <img src="images/ridge-regression.png" width="200"/>
 <br/>
 
+We take the cost function, perform a bit of algebra, take the partial derivative with respect to w (the vector of coefficients), make it equal to 0 and then solve for w.
+
+<img src="images/ridge_regression_linear_algebra.png" width="300"/>
+<br/>
+
+Description:
+
 * The penalty is the sum of squared coeficients.
 * It's also called L2 regularization;
 * The coeficients are never set to zero but can be very close to.
 * when alpha is zero, the cost function is the same as the regular linear regression.
+
+### Lasso
+
+New Cost Function:
+
+<img src="images/lasso-regression.png" width="200"/>
+<br/>
+
+Description:
+
+* Adds a penalty to the cost function that is the sum of all modules of coeficients;
+* It's also called L1 Regularization;
+* The Coeficients can be set to zero, so  Lasso can work as a feature selection approach.
+* when alpha is zero, the cost function is the same as the regular linear regression.
+
 
 ### ElasticNet
 
@@ -162,10 +172,12 @@ New Cost Function:
 <img src="images/elastic-net.png" width="500"/>
 <br/>
 
+Description:
+
 * Is the mix of L1 and L2 regularization.
 * The parameter ratio controls the weight of each regularizer method.
 
-## Comments
+### Comments
 
 * Lasso tend to give more sparse weights (most zeros). Lasso (and Elastic-net with ratio close to one) may be really good idea to start with because they can work as feature selection.
 
