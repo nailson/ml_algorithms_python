@@ -19,7 +19,8 @@ The purpose of this repository is to develop the fundamental ML algorithms from 
 ## Linear Regression
 * [Simple Linear Regression](https://github.com/nailson/ml_algorithms_python/tree/master/linear_regression): it is a simplified version of the regression method that can be used in place of ordinary least squares. It consists of a sample of two-dimensional points with an independent variable and a dependent variable.
 
-* [Least Squares Regression](https://github.com/nailson/ml_algorithms_python/tree/master/linear_regression): is a linear model function that fits in the least-squares sense in order to minimizes the sum of squared residuals. Includes both: using simple derivatives or gradient descendent. 
+* [Least Squares Regression](https://github.com/nailson/ml_algorithms_python/tree/master/linear_regression): is a linear model function that fits in the least-squares sense in order to minimizes the sum of squared residuals. Includes both: using simple derivatives or gradient descendent training. 
+It includes Ridge, Lasso regularization. 
 
 ## Logistic Regression
 TODO
