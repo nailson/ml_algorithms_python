@@ -76,6 +76,9 @@ The array with all the Coeficients is given by:
 
 <img src="images/multiple_beta.png" width="170"/>
 
+This formula is given an approximation of the solution of linear equations, called Moore–Penrose inverse (used to solve the least squares solution)
+A system is overdetermined if it has more equations than variables.
+
 ### Comments
 The Normal Equation may not work if the matrix X^T * X is not invertible (i.e., singular), such as if m < n or if some features are redundant, but the pseudoinverse is always defined.
 
